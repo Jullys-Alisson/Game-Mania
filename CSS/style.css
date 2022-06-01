@@ -11,58 +11,46 @@ header {
     height: 100px;
     background-image: url("../img/1.jpg");
     background-size: cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    display: flex;
-    justify-content: space-around;
 }
 
 .container-grid {
     width: 100%;
     height: 100%;
     display: flex;
-    justify-content: center;
-    position: relative;
-    color: white;
-    text-transform: uppercase;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 100px;
+    position: relative;
 }
 
 .container-grid form {
     display: flex;
 }
+
 .form input {
     font-size: 20px;
     width: 100px;
 }
+
 .form button {
     font-size: 20px;
 }
 
 .Logo {
-    width: 450px;
+    width: 400px;
 }
-
-/* .posicionamento-header {
-    margin-left: -50px;
-    margin-right: -50px;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    justify-content: space-around;
-    align-items: center;
-    position: relative;
-} */
 
 .menu {
-    font-size:25px;
-    width: 300px;
+    font-size: 20px;
+    width: 351px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
-.menu a{
+.menu a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
@@ -76,7 +64,7 @@ header {
 }
 
 .barras-cabecalho img {
-    width: 50px; 
+    width: 50px;
 }
 
 .logos_plataformas {
@@ -85,52 +73,54 @@ header {
     display: flex;
     background-color: white;
     justify-content: space-around;
-    align-items: center ;
+    align-items: center;
 }
 
-.menu a:after{
+.menu a:after {
     content: '';
     height: 2px;
     width: 0%;
     background-color: white;
     display: block;
     transition: .5s ease-in-out;
-   /* text-decoration: underline; */
 }
-.menu a:hover::after{
+
+.menu a:hover::after {
     content: '';
     height: 2px;
     width: 100%;
     background-color: white;
     display: block;
-   /* text-decoration: underline; */
+    /* text-decoration: underline; */
 }
 
 .banner {
     width: 100%;
-    height: 700px;
+    height: 750px;
     background-image: url(../img/imagem_banner2.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.banner-halo {
+.EldenRing {
     width: 100%;
-    height: 1220px;
-    background-image: url(../img/imagens\ banner.png);
+    height: 750px;
+    background-image: url(/img/Elden\ Ring\ \(2\).jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.banner-lol {
+.Valorant {
     width: 100%;
-    height: 1220px;
-    background-image: url(../img/LOL3.jpg);
+    height: 750px;
+    background-image: url(/img/Valorant\ New.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-.banner-eldenring {
-    background-image: url(../img/Elden\ Ring\ \(2\).jpg);
-
-}
 .head-a {
     width: 100%;
     height: 100px;
@@ -155,7 +145,7 @@ header {
     height: 111px;
     margin-top: 78px;
     font-size: 40px;
-    transform: translate(-10%,-50%);
+    transform: translate(-10%, -50%);
     color: #1670f0;
     padding: 32px 95px;
     font-size: 30px;
@@ -165,11 +155,13 @@ header {
     box-shadow: 0 20px 50px rgb(0 0 0 / 50%);
     overflow: hidden;
 }
+
 .head-a a button {
-    background: linear-gradient(to right, #0c002b,#1779ff);
+    background: linear-gradient(to right, #0c002b, #1779ff);
     color: white;
     font-weight: 500;
 }
+
 .head-a a:before {
     content: '';
     position: absolute;
@@ -177,78 +169,91 @@ header {
     left: 2px;
     bottom: 2px;
     width: 50%;
-    background-color: rgba(255,255,255,0.05);
+    background-color: rgba(255, 255, 255, 0.05);
 }
+
 .head-a a span:nth-child(1) {
     position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to right, #0c002b,#1779ff);
+    background: linear-gradient(to right, #0c002b, #1779ff);
     animation: animate1 2s linear infinite;
 }
+
 @keyframes animate1 {
     0% {
         transform: translateX(-100%);
     }
+
     100% {
         transform: translateX(100%);
     }
 }
+
 .head-a a span:nth-child(2) {
     position: absolute;
     top: 0%;
     right: 0%;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, #0c002b,#1779ff);
+    background: linear-gradient(to bottom, #0c002b, #1779ff);
     animation: animate2 2s linear infinite;
-    animation-delay: 1s; 
+    animation-delay: 1s;
 }
+
 @keyframes animate2 {
     0% {
         transform: translateY(-100%);
     }
+
     100% {
         transform: translateY(100%);
     }
 }
+
 .head-a a span:nth-child(3) {
     position: absolute;
     bottom: 0%;
     left: 0%;
     width: 100%;
     height: 2px;
-    background: linear-gradient(to left, #0c002b,#1779ff);
+    background: linear-gradient(to left, #0c002b, #1779ff);
     animation: animate3 2s linear infinite;
 }
+
 @keyframes animate3 {
     0% {
         transform: translateX(100%);
     }
+
     100% {
         transform: translateX(-100%);
     }
 }
+
 .head-a a span:nth-child(4) {
     position: absolute;
     top: 0%;
     left: 0%;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to top, #0c002b,#1779ff);
+    background: linear-gradient(to top, #0c002b, #1779ff);
     animation: animate4 2s linear infinite;
-    animation-delay: 1s; 
+    animation-delay: 1s;
 }
+
 @keyframes animate4 {
     0% {
         transform: translateY(100%);
     }
+
     100% {
         transform: translateY(-100%);
     }
 }
+
 .texto-banner {
     height: 50px;
     margin-top: 50px;
@@ -260,7 +265,7 @@ header {
 }
 
 .texto-banner p {
-    width: 500px;
+    width: 500px ;
     font-size: 30px;
     margin-top: 100px;
     margin-bottom: 0.5rem;
@@ -278,35 +283,17 @@ header {
     margin-left: 150px;
 }
 
-/* .banner carouselExampleIndicators {
-    margin-top: 20px;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 0,5;
-    color: white;
-    justify-content: center;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-} */
-
 .servicos {
     width: 100%;
     height: 100px;
     font-size: 40px;
-    /* margin-bottom: 50px; */
     background-color: black;
     color: white;
     display: flex;
     justify-content: space-around;
-    text-transform: uppercase; 
+    text-transform: uppercase;
     align-items: center;
 }
-
-/* .servicos a{
-    color: antiquewhite;
-    margin-right: 170px;
-} */
 .promocoes {
     width: 100%;
     height: 1000px;
@@ -325,19 +312,18 @@ header {
     text-align: center;
 }
 
-/* .promocoes d-block w-100 {
+.promocoes d-block w-100 {
     width: 300px;
     font-weight: 700;
-    line-height: 0,5;
+    line-height: 0, 5;
     color: white;
     justify-content: center;
     display: flex;
     justify-content: space-around;
     text-align: center;
-} */
+}
 
 .menu-flex {
-    /* width: 100%; */
     height: 800px;
     display: flex;
     margin: 5%;
@@ -398,20 +384,7 @@ header {
     justify-content: space-around;
     text-align: center;
 }
-
-/* .promocoes d-block w-100 {
-    width: 300px;
-    font-weight: 700;
-    line-height: 0,5;
-    color: white;
-    justify-content: center;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-} */
-
 .menu_flex {
-    /* width: 100%; */
     height: 800px;
     display: flex;
     margin: 5%;
@@ -457,7 +430,7 @@ header {
 
 .noticias {
     width: 100%;
-    height: 600px;
+    height: 100%;
     background-size: cover;
     background-image: url(../img/4.jpg);
     background-repeat: no-repeat;
@@ -467,7 +440,7 @@ header {
 .noticias header {
     font-size: 60px;
     font-weight: 700;
-    line-height: 0,5;
+    line-height: 0, 5;
     color: white;
     justify-content: center;
     display: flex;
@@ -475,55 +448,65 @@ header {
     text-align: center;
 }
 
-.bloco-de-noticias h2 {
+.container-noticias h2 {
     width: 100%;
-    height: 100px;
-    line-height: 0,5;
-    margin-top: 50px;
-    text-align: center;
-    font-size: 50px;
-    color: white;
-}
-.card-not {
-    width: 300px;
+    height: 100%;
     display: flex;
+    margin: 5%;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
     justify-content: space-around;
     align-items: center;
 }
 
+.noticias h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card-news p {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
 .content-news {
+    height: 100%;
     display: flex;
     text-align: left;
     justify-content: space-around;
     color: white;
-} 
-
-.content-news h3 {
-    display: flex;
-    font-size: 30px;
-    text-align: left;
 }
 
 .rodape {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 100px;
-    /* margin-top: 50px; */
     background-size: cover;
     background-image: url(../img/3.jpg);
     background-repeat: no-repeat;
     background-position: center;
 }
 
-.headsrodape {
+  .headsrodape {
     margin-top: 100px;
     margin-bottom: 20px;
     padding: 20px;
     box-sizing: border-box;
-}
-
-.rodape h1 {
+  }
+  
+  .rodape h1 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 15px;
@@ -533,9 +516,9 @@ header {
     justify-content: center;
     justify-content: space-around;
     text-align: center;
-}
-
-.rodape h2 {
+  }
+  
+  .rodape h2 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 15px;
@@ -545,9 +528,9 @@ header {
     justify-content: center;
     justify-content: space-around;
     text-align: center;
-}
-
-.rodape h3 {
+  }
+  
+  .rodape h3 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 15px;
@@ -557,9 +540,9 @@ header {
     justify-content: center;
     justify-content: space-around;
     text-align: center;
-}
-
-.rodape h4 {
+  }
+  
+  .rodape h4 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 15px;
@@ -569,9 +552,9 @@ header {
     justify-content: center;
     justify-content: space-around;
     text-align: center;
-}
-
-.rodape h5 {
+  }
+  
+  .rodape h5 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 15px;
@@ -581,9 +564,9 @@ header {
     justify-content: center;
     justify-content: space-around;
     text-align: center;
-}
-
-.rodape h6 {
+  }
+  
+  .rodape h6 {
     margin-top: 0;
     margin-bottom: 0.5rem;
     font-size: 15px;
@@ -591,30 +574,54 @@ header {
     line-height: 1.2;
     color: white;
     text-align: center;
-}
-
-.headsrodape form {
+  }
+  
+  .headsrodape form {
     align-items: center;
     text-align: center;
-}
+  }
+  
+
 @media screen and (max-width: 1290px) {
     .logos_plataformas {
         display: none;
     }
+
+    .EldenRing {
+        width: 100%;
+        height:100%;
+    }
+
+    .Valorant {
+        width: 100%;
+        height:100%;
+    }
+
     .container-grid {
         width: 85%;
     }
+
     .promocoes {
         height: 1200px;
     }
+
     .head-a h1 {
         display: none;
     }
 }
 
 @media screen and (max-width: 980px) {
-    .container-grid form{
+    .container-grid form {
         display: none;
+    }
+    .EldenRing {
+        width: 100%;
+        height:100%;
+    }
+
+    .Valorant {
+        width: 100%;
+        height:100%;
     }
 }
 
@@ -622,12 +629,25 @@ header {
     .container-grid {
         justify-content: space-between;
     }
+
     .barras-cabecalho {
         display: inline-block;
     }
-    .container-grid form{
-            display: none;
+
+    .EldenRing {
+        width: 100%;
+        height:100%;
     }
+
+    .Valorant {
+        width: 100%;
+        height:100%;
+    }
+
+    .container-grid form {
+        display: none;
+    }
+
     .head-a a {
         display: flex;
         justify-content: center;
@@ -642,9 +662,9 @@ header {
         position: absolute;
         top: 210px;
         right: 0%;
-     }
+    }
 
-     .menu-ativo {
+    .menu-ativo {
         display: flex;
         flex-direction: column;
         text-align: right;
@@ -654,20 +674,22 @@ header {
         position: absolute;
         top: 110px;
         right: 0%;
-     }
+    }
+
     .texto-banner a {
-            display: none; 
-            text-align: left;
+        display: none;
+        text-align: left;
     }
 
     .texto-banner h1 {
         display: none;
-        display: none; 
+        display: none;
         text-align: center;
         align-items: center;
     }
+
     .texto-banner {
-        display: flex; 
+        display: flex;
         text-align: left;
         align-items: center;
     }
@@ -675,31 +697,48 @@ header {
     .promocoes {
         height: 2100px;
     }
+
     .promocoes img {
         display: 100px;
     }
+
     .noticias {
         height: 1200px;
     }
-    }
-    .content-news {
-        display: 50px;
-        flex-wrap: wrap;
-    }
-    .rodape {
-        height: 800px;
+}
+
+.content-news {
+    display: 50px;
+    flex-wrap: wrap;
+}
+
+.rodape {
+    height: 800px;
 }
 
 @media screen and (max-width: 768px) {
     .container-grid {
         justify-content: space-between;
     }
+
     .barras-cabecalho {
         display: inline-block;
     }
-    .container-grid form{
-            display: none;
+
+    .EldenRing {
+        width: 100%;
+        height:100%;
     }
+
+    .Valorant {
+        width: 100%;
+        height:100%;
+    }
+
+    .container-grid form {
+        display: none;
+    }
+
     .head-a a {
         display: flex;
         justify-content: center;
@@ -714,9 +753,9 @@ header {
         position: absolute;
         top: 210px;
         right: 0%;
-     }
+    }
 
-     .menu-ativo {
+    .menu-ativo {
         display: flex;
         flex-direction: column;
         text-align: right;
@@ -726,45 +765,53 @@ header {
         position: absolute;
         top: 110px;
         right: 0%;
-     }
+    }
+
     .texto-banner a {
-            display: none; 
-            text-align: left;
+        display: none;
+        text-align: left;
     }
 
     .texto-banner h1 {
         display: none;
-        display: none; 
+        display: none;
         text-align: center;
         align-items: center;
     }
+
     .texto-banner {
-        display: flex; 
+        display: flex;
         text-align: left;
         align-items: center;
     }
+
     .servicos {
         width: 100%;
         height: 100%;
         display: flex;
         flex-wrap: wrap;
     }
+
     .promocoes {
         height: 2100px;
     }
+
     .promocoes img {
         display: 100px;
     }
+
     .noticias {
         height: 1200px;
     }
-    }
-    .content-news {
-        display: 50px;
-        flex-wrap: wrap;
-    }
-    .rodape {
-        height: 800px;
+}
+
+.content-news {
+    display: 50px;
+    flex-wrap: wrap;
+}
+
+.rodape {
+    height: 800px;
 }
 
 @media screen and (max-width: 700px) {
@@ -772,79 +819,106 @@ header {
         width: 280px;
         justify-content: center;
     }
+
+    .EldenRing {
+        width: 100%;
+        height:100%;
+    }
+
+    .Valorant {
+        width: 100%;
+        height:100%;
+    }
+
     .container-grid {
         width: 100%;
         justify-content: center;
     }
+
     .head-a button {
         width: 100px;
         justify-content: center;
     }
+
     .barras-cabecalho {
         display: none;
     }
 }
+
 @media screen and (max-width: 300px) {
-    
+
     .Logo {
         width: 280px;
         justify-content: space-around;
     }
+
     .container-grid {
         width: 100%;
     }
+
     .container-grid {
         justify-content: space-between;
     }
+
     .barras-cabecalho {
         display: none;
     }
-    .container-grid form{
+
+    .container-grid form {
         display: none;
     }
+
     .head-a a {
         width: 100px;
-    /* display: flex; */
-    justify-content: center;
+        justify-content: center;
     }
+
     .texto-banner a {
-    display: none;
+        display: none;
     }
+
     .menu {
-    display: none;
-    flex-direction: column;
-    text-align: right;
-    height: 100px;
-    justify-content: space-around;
-    position: absolute;
-    top: 100px;
-    right: 0%;
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        height: 100px;
+        justify-content: space-around;
+        position: absolute;
+        top: 100px;
+        right: 0%;
     }
+
     .texto-banner h1 {
-    display: none;
-    display: none; 
-    text-align: center;
-    align-items: center;
+        display: none;
+        display: none;
+        text-align: center;
+        align-items: center;
     }
+
     .texto-banner {
-    display: flex; 
-    text-align: left;
-    align-items: center;
+        display: flex;
+        text-align: left;
+        align-items: center;
     }
+
     .promocoes {
-    height: 2100px;
+        height: 2100px;
     }
+
     .promocoes img {
-    display: 30px;
+        display: 30px;
     }
+
     .noticias {
-    height: 1200px;
+        height: 1200px;
     }
+
     .content-news {
-    display: 50px;
-    flex-wrap: wrap;
+        display: 50px;
+        flex-wrap: wrap;
     }
+
     .rodape {
-    height: 800px;
+        height: 800px;
     }
 }
